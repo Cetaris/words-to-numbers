@@ -1,7 +1,7 @@
 {
   "name": "words-to-numbers",
-  "description": "convert textual words to numbers with optional fuzzy text matching",
-  "version": "1.5.4",
+  "description": "A fork of [finnfiddle/words-to-numbers](https://github.com/finnfiddle/words-to-numbers): convert textual words to numbers with optional fuzzy text matching",
+  "version": "1.5.5",
   "license": "MIT",
   "options": {
     "mocha": "--require scripts/mocha_runner src/**/__tests__/**/*.js"
@@ -29,14 +29,14 @@
     "mocha": "^7.2.0",
     "nodemon": "1.7.x"
   },
-  "author": "Finn Fitzsimons <hello@finn.works>",
+  "author": "kwu-work <kwu.work@gmail.com>",
   "bugs": {
-    "url": "https://github.com/finnfiddle/words-to-numbers/issues"
+    "url": "https://github.com/kwu-work/words-to-numbers/issues"
   },
-  "homepage": "https://github.com/finnfiddle/words-to-numbers",
+  "homepage": "https://github.com/kwu-work/words-to-numbers",
   "repository": {
     "type": "git",
-    "url": "https://github.com/finnfiddle/words-to-numbers.git"
+    "url": "https://github.com/kwu-work/words-to-numbers.git"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",

@@ -8,13 +8,19 @@ npm
 
 ## publish to Github
 
-generate personal access token: repo/write:packages/read:packages
+1. generate personal access token: repo/write:packages/read:packages
 
-in package.json, add:
+2. in package.json, add:
+   ```
+   "publishConfig": {
+   "registry": "https://npm.pkg.github.com/@kwu-work"
+   }
+   ```
+3. package.json "version"++
 
-"publishConfig": {
-"registry": "https://npm.pkg.github.com/@kwu-work"
-}
+4. npm run prepublish
+
+5. npm publish
 
 ## install in target projects
 
