@@ -1,3 +1,34 @@
+# Kai
+
+npm i fsevents
+npm i
+npm update
+
+npm
+
+## publish to Github
+
+generate personal access token: repo/write:packages/read:packages
+
+in package.json, add:
+
+"publishConfig": {
+"registry": "https://npm.pkg.github.com/@kwu-work"
+}
+
+## install in target projects
+
+in .npmrc add
+
+```
+@kwu-work:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=${github token}
+```
+
+```
+npm install @kwu-work/words-to-numbers
+```
+
 # Words To Numbers
 
 Convert words to numbers. Optionally fuzzy match the words to numbers.
@@ -42,12 +73,13 @@ wordsToNumbers('there were twenty-thousand, five-hundred and sixty-nine X in the
 ## With Fuzzy Matching
 
 Uses [Jaro distance](http://yomguithereal.github.io/clj-fuzzy/javascript.html#jaro) to find the best match for the number words. Don't rely on this being completely accurate...
+update: clj-fuzzy deprecated, replaced by [talisman/metrics/jaro](https://github.com/Yomguithereal/talisman/blob/master/src/metrics/jaro.js)
 
 ```javascript
 import wordsToNumbers from 'words-to-numbers';
-wordsToNumbers('won huntred', {fuzzy: true}); //100
-wordsToNumbers('too thousant and fiev', {fuzzy: true}); //2005
-wordsToNumbers('tree millyon sefen hunderd and twinty sex', {fuzzy: true}); //3000726
+wordsToNumbers('won huntred', { fuzzy: true }); //100
+wordsToNumbers('too thousant and fiev', { fuzzy: true }); //2005
+wordsToNumbers('tree millyon sefen hunderd and twinty sex', { fuzzy: true }); //3000726
 ```
 
 ## Decimal Points

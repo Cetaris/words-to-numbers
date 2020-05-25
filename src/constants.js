@@ -1,6 +1,6 @@
-
 export const UNIT = {
   zero: 0,
+  oh: 0, // Kai
   first: 1,
   one: 1,
   second: 2,
@@ -83,10 +83,10 @@ export const UNIT_KEYS = Object.keys(UNIT);
 export const TEN_KEYS = Object.keys(TEN);
 export const MAGNITUDE_KEYS = Object.keys(MAGNITUDE);
 
-export const NUMBER_WORDS = [ ...UNIT_KEYS, ...TEN_KEYS, ...MAGNITUDE_KEYS];
+export const NUMBER_WORDS = [...UNIT_KEYS, ...TEN_KEYS, ...MAGNITUDE_KEYS];
 
 export const JOINERS = ['and'];
-export const DECIMALS = ['point', 'dot'];
+export const DECIMALS = ['point', 'dot', 'decimal']; // Kai added decimal
 
 export const PUNCTUATION = [
   '.',
@@ -122,6 +122,6 @@ export const TOKEN_TYPE = {
   HUNDRED: 4,
 };
 
-export const ALL_WORDS = [ ...NUMBER_WORDS, ...JOINERS, ...DECIMALS ];
+export const ALL_WORDS = [...NUMBER_WORDS, ...JOINERS, ...DECIMALS];
 
 export const BLACKLIST_SINGULAR_WORDS = ['a'];
